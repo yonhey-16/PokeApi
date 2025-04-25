@@ -1,0 +1,23 @@
+{
+    "name": "PokeApp",
+    "short_name": "PokeApp",
+    "description": "Aplicación web para explorar Pokémon con PokéAPI",
+    "start_url": ".",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#BE3D2A",
+    "theme_color": "#e00000",
+    "icons": [
+      {
+        "src": "icons/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
