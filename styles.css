@@ -50,22 +50,26 @@ button:active {
 
 .c-lista-pokemon {
     background-color: #fff;
-    width: calc(50% - 20px);
+    width: calc(45% - 20px);
     padding: 20px;
     text-align: center;
     border-radius: 14px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .c-lista-pokemon img {
     width: 100%;
-    max-width: 140px;
+    max-width: 120px;
     height: auto;
+    max-height: 120px;
+    object-fit: contain;
     border-radius: 10px;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
-    object-fit: contain;
 }
 
 .c-lista-pokemon h3 {
@@ -146,7 +150,6 @@ button:active {
     padding: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    text-align: center;
 }
 
 .c-mios-pokemon:hover {
@@ -155,12 +158,10 @@ button:active {
 }
 
 .c-mios-pokemon img {
-    width: 100%;
-    max-width: 100px;
+    width: 60%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
-    object-fit: contain;
 }
 
 /* Contadores */
@@ -211,4 +212,33 @@ button:active {
     font-size: 1.2rem;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .c-lista-pokemon {
+        width: calc(90% - 20px);
+    }
+
+    .c-unpoke {
+        width: calc(45% - 10px);
+    }
+
+    .c-nav-item {
+        width: 24%;
+    }
+}
+
+@media (max-width: 480px) {
+    .c-lista-pokemon {
+        width: 100%;
+    }
+
+    .c-unpoke {
+        width: 100%;
+    }
+
+    .c-nav-item {
+        width: 28%;
+    }
 }
