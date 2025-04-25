@@ -59,10 +59,13 @@ button:active {
 }
 
 .c-lista-pokemon img {
-    width: 80%;
+    width: 100%;
+    max-width: 140px;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
 .c-lista-pokemon h3 {
@@ -143,6 +146,7 @@ button:active {
     padding: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .c-mios-pokemon:hover {
@@ -151,10 +155,12 @@ button:active {
 }
 
 .c-mios-pokemon img {
-    width: 60%;
+    width: 100%;
+    max-width: 100px;
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 
 /* Contadores */
